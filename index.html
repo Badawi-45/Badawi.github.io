@@ -88,20 +88,51 @@
 
   <main class="main">
 
-    <!-- Hero Section -->
-    <section id="hero" class="hero section">
+   <!-- START HERO SECTION - SIAP PAKAI -->
+<section id="hero" class="hero section" style="position: relative; min-height: 100vh; display: flex; align-items: center; justify-content: center; overflow: hidden; color: #ffffff; margin: 0; padding: 0;">
 
-      <img src="assets/img/testimonials/Datacenter01.jpg" alt="" data-aos="fade-in">
+  <!-- 1. Gambar Latar Belakang Data Center -->
+  <img src="assets/img/testimonials/Datacenter01.jpg" alt="Data Center Background" data-aos="fade-in" style="position: absolute; top: 0; start: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0;">
+  
+  <!-- 2. Lapisan Gelap Transparan (Overlay) Agar Tulisan Kontras & Terbaca -->
+  <div class="hero-overlay" style="position: absolute; top: 0; start: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.65); z-index: 1;"></div>
 
-      <div class="container text-center" data-aos="zoom-out" data-aos-delay="100">
-        <div class="row justify-content-center">
-          <div class="col-lg-8">
-            <h2>Badawi</h2>
-            <p>I'm a IT Assistant Manager | Techmical Support & Share Service | VMware | Veeam Backup Replication |Veeam One |Monitoring | Microsoft Admin 365 Admin Center | Microsoft Purview Data Lost Prevention | Active Directory</p>
-            <a href="about.html" class="btn-get-started">About Me</a>
-          </div>
-        </div>
+  <!-- 3. Wadah Konten Utama -->
+  <div class="container text-center" data-aos="zoom-out" data-aos-delay="100" style="position: relative; z-index: 2; max-width: 900px; padding: 0 20px;">
+    <div class="row justify-content-center">
+      <div class="col-lg-12">
+        
+        <!-- Nama Besar dengan Efek Bayangan Tegas -->
+        <h2 style="font-size: clamp(2.5rem, 5vw, 4.5rem); font-weight: 800; margin-bottom: 20px; text-shadow: 2px 4px 10px rgba(0,0,0,0.95); letter-spacing: 1px; color: #ffffff;">
+          Badawi
+        </h2>
+        
+        <!-- Deskripsi Keahlian (Sudah Diperbaiki Dari Typo) -->
+        <p style="font-size: clamp(1rem, 2vw, 1.25rem); line-height: 1.8; margin-bottom: 35px; text-shadow: 1px 2px 6px rgba(0,0,0,0.95); color: #f8f9fa; font-weight: 400;">
+          I'm an <strong style="color: #ffffff; font-weight: 700;">IT Assistant Manager</strong> 
+          <span style="color: #0dcaf0; margin: 0 8px; font-weight: bold;">|</span> Technical Support & Shared Services 
+          <span style="color: #0dcaf0; margin: 0 8px; font-weight: bold;">|</span> VMware 
+          <span style="color: #0dcaf0; margin: 0 8px; font-weight: bold;">|</span> Veeam Backup & Replication 
+          <span style="color: #0dcaf0; margin: 0 8px; font-weight: bold;">|</span> Veeam ONE Monitoring 
+          <span style="color: #0dcaf0; margin: 0 8px; font-weight: bold;">|</span> Microsoft 365 Admin Center 
+          <span style="color: #0dcaf0; margin: 0 8px; font-weight: bold;">|</span> Microsoft Purview Data Loss Prevention 
+          <span style="color: #0dcaf0; margin: 0 8px; font-weight: bold;">|</span> Active Directory
+        </p>
+        
+        <!-- Tombol Interaktif dengan Efek Hover bawaan CSS Inline -->
+        <a href="about.html" class="btn-get-started" 
+           style="display: inline-block; padding: 12px 35px; font-size: 1rem; font-weight: 600; color: #ffffff; text-decoration: none; border: 2px solid #ffffff; border-radius: 50px; background: transparent; transition: all 0.3s ease; box-shadow: 0 4px 10px rgba(0,0,0,0.3);"
+           onmouseover="this.style.background='#ffffff'; this.style.color='#002060'; this.style.boxShadow='0 4px 20px rgba(255,255,255,0.4)';"
+           onmouseout="this.style.background='transparent'; this.style.color='#ffffff'; this.style.boxShadow='0 4px 10px rgba(0,0,0,0.3)';">
+          About Me
+        </a>
+
       </div>
+    </div>
+  </div>
+</section>
+<!-- END HERO SECTION - SIAP PAKAI -->
+
 
     </section><!-- /Hero Section -->
 
